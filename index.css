@@ -1,0 +1,313 @@
+*{
+    box-sizing:border-box;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: inherit;
+}
+
+button{
+    background-color: rgb(0, 0, 0);
+    border: solid 2px rgb(255, 255, 255);
+    color: white;
+    width: 30%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    word-wrap: inherit;
+}
+button:hover
+{
+    cursor: pointer;
+    border: solid 2px yellow;
+}
+
+body{
+    background-color: rgb(31, 63, 33);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+article p:hover{
+    background-color: rgb(51, 52, 56)
+}
+
+h1{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+/*h2{padding:10px;}*/
+h1,h2,h3,h4{padding:5px;}
+
+form {font-size: 14px;}
+
+p{color:rgb(192, 192, 192); font-size: 13px; margin: 10px;}
+
+ul p{color: black;}
+a{
+    text-decoration: none;
+    margin: 0;
+    padding: 1px;
+    color: black;
+    display: block;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color:rgb(54, 95, 71);
+    color: white;
+    border-bottom: 5px solid rgb(0, 255, 34);
+    border-top: 5px solid rgb(0, 255, 34);
+    border-radius: 0;
+    width: 100%;
+}
+
+article a, .stickyheader a{
+    color: rgb(190, 138, 98);
+    background-color: rgba(58, 59, 63, 0.251);
+    padding: 0px;
+    display: inline;
+}
+.stickyheader a{background-color: rgba(58, 59, 63, 0.512);}
+.stickyheader{
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color:rgb(23, 34, 23);
+    justify-content: center;
+    padding: 2px;
+}
+
+.stickyheader a{padding: 2px;}
+
+article a:hover, .stickyheader a:hover{
+    color: rgb(255, 185, 132);
+    background-color: rgb(53, 54, 58);
+}
+
+nav{
+    background-color: rgb(255, 255, 255);
+    color: white;
+    overflow-wrap: break-word;
+}
+
+article{
+    background-color: rgb(25, 26, 28); 
+    border: 5px double rgb(255, 255, 255);
+    color: white;
+}
+
+section{
+    overflow: hidden;
+    border: 2px none rgb(90, 108, 92);
+    background-color: rgb(42, 43, 46);
+    margin: 10px;
+}
+section p{text-align: justify;}
+
+figure{
+    max-width: 100%;
+    box-sizing: content-box;
+    overflow: hidden;
+    padding: 0;
+}
+
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+}
+
+.flexbox{
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    overflow-wrap: break-word;
+    flex-direction: column;
+}
+.flexbox2{
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    overflow-wrap: break-word;
+    flex-direction: row;
+}
+
+[class*=col]{
+    padding: 10px;
+    text-align: center;
+    float: left;
+    border-radius: 5px;
+}
+
+
+
+.title{
+    overflow: hidden;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(54, 92, 69);
+    margin: 10px;
+}
+
+
+.spoiler {
+    color: rgb(255, 255, 255);
+    background-color: black;
+  }
+.spoiler span {color: rgba(0, 0, 0, 0);}
+.spoiler:hover span {
+      display: inline;
+      background-color: black;
+      color: white;
+}
+
+
+table,th,tr,td{
+    border: 1px solid rgb(132, 132, 132);
+    border-collapse: collapse;
+    border-radius: 0px;
+}
+th{background-color: rgb(160, 176, 221); color: black;}
+td a{border-radius: 0px; display:block}
+
+table{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+    border: none;
+}
+
+th,td{padding: 1px;}
+th{font-size:14px;}
+td{font-size:12px;}
+.line{
+    background-color: rgb(255, 237, 137);
+    color: black;
+}
+.warning{background-color:rgb(59, 59, 23)}
+.good{background-color:rgb(31, 57, 34)}
+
+
+
+.sticky{
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 25%;
+}
+
+img{margin:0; padding:0;max-width: 95%;height:auto;}
+
+.lirio {display: none}
+.img_padrao{display: initial;}
+
+
+.menu{
+    border: 3px solid rgb(194, 194, 194); 
+    background-color: rgb(25, 26, 28);
+    margin: 5px;
+    padding: 1px;
+}
+.menu a:hover{background-color: rgb(146, 217, 88);color: rgb(255, 255, 255)}
+.menu h2{margin: 5px; padding: 5px;}
+.menu li{
+    background-color: rgb(172, 255, 105);
+}
+.menu p{margin-top: 0}
+.menu h3{margin-bottom: 0;}
+
+.col-1 {width: 20%;}
+.col-2 {width: 95%;}
+.col-3 {width: 48.5%;}
+.col-4 {width: 70%;}
+.col-full{width: 100%;}
+.col-2 p{text-align: justify;}
+
+
+@media only screen and (max-width: 720px) {
+    [class*="col-"], figure{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    figure{display: contents;}
+    .sticky{position: unset; width: 100%}
+    .stickyheader{
+        display: flex;
+        position: fixed;
+        max-width: 96%;
+        top: 0;
+        left: 5px;
+        right: 5px;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    body{background-size: auto;}
+    div{
+        float: left;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header{
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: stretch;
+    }
+
+
+    .img_padrao{display: none}
+    .img_pequeno{display: initial;}
+
+    figure .lirio{
+        float: none;
+        width: 133px; height: auto;
+    }
+    .basil{
+        float: none;
+        max-width: 90%;
+        height: auto;
+    }
+    .omori{
+        float: none;
+        max-width: 90%;height: auto;
+
+    }
+    th{font-size:10px;}
+    td,caption{font-size:8px;}
+}
+
+
+@media only screen and (min-width: 720px) and (max-width: 991px){
+    .menu{font-size: 12px;}
+
+    .img_padrao{display: none}
+    .img_medio{display: initial}
+
+    figure .lirio{
+        float: none;
+        width: 200px;height: auto;
+    }
+
+    .col-3{width: 90%}
+    .basil{
+        float: none;
+        height: auto;
+        max-width: 80%;
+    }
+    .omori{
+        float: none;
+        max-width: 80%;
+    }
+    .sticky{
+        top: 0;
+    }
+}

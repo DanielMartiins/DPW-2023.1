@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lírio do Vale</title>
+    <link href="index.css" rel="stylesheet">
+    <style>
+        @media only screen and (min-width: 700px) and (max-width: 991px){
+            form > .col-1, div > .col-1{width: 45%;}
+        }
+        #submit{
+            background-color: rgb(64, 92, 70); border: 5px solid black;
+            float: left; 
+            width: 100%; 
+            height: 50px; 
+            font-size: 20px; 
+            font-weight: bolder; 
+            color: white;
+        }
+        #submit:hover{
+            cursor: pointer;
+            background-color: rgb(97, 140, 106);
+            border: 5px solid rgb(255, 255, 255);
+        }
+
+        .formulario section{
+            display: none;
+        }
+
+        #respostas{display: none;}
+    </style>
+    <script src="customizarPagina.js"></script>
+    <script src="quiz.js"></script>
+</head>
+<body>
+
+    <header><h1>Quiz</h1></header>
+
+    <nav class="col-1 menu sticky">
+        <ul>
+            <li>
+                <a href="index.html"><h3>Página Inicial</h3><p></p></a>
+            </li>
+
+            <li>
+                <a href="curiosidades.html"><h3>Curiosidades</h3><p>Localização, tipos, comércio, etc</p></a>
+            </li>
+            
+            <li>
+                <a href="cultura.html"><h3>Cultura</h3><p>Música, games e sites onde a planta é destaque</p></a>
+            </li>
+            
+            <li style="background-color:rgb(113, 170, 69); color: black;margin: 10px;padding: 1px;"><h3><u>Quiz</u></h3><p>Teste seus conhecimentos sobre a flor</p></li>
+
+        </ul>
+    </nav>
+
+
+
+    <div class="flexbox">
+
+        <article class="col-full">
+
+            <h2 class="title"> Descubra se você sabe tudo de lírio do vale</h2>
+
+            <form id="formulario" class="flexbox2 formulario" style="float:left">
+
+                <section id="questao1" class="col-1" style="text-align:left">
+                    <h4>Os tipos de lírio do vale são: Lírios orientais, asiáticos e longuiforem</h4>
+                    <input type="radio" name="questao1" value="correto" >Verdadeiro<br>
+                    <input type="radio" name="questao1" value="incorreto" >Falso<br>
+                </section>
+
+                <section id="questao2" class="col-1" style="text-align:left">
+                    <h4>Lírio do vale é conhecido por sua beleza, delicadeza e bom aroma. Seu filho e seu pet estão 
+                        seguros perto delas.</h4>
+                    <input type="radio" name="questao2" value="incorreto" >Verdadeiro<br>
+                    <input type="radio" name="questao2" value="correto" >Falso<br>
+                </section>
+
+                <section id="questao3" class="col-1" style="text-align:left">
+                    <h4>A flor lírio oriental é marcante pelo seu cheiro.</h4>
+                    <input type="radio" name="questao3" value="correto" >Verdadeiro<br>
+                    <input type="radio" name="questao3" value="incorreto" >Falso<br>
+                </section>
+
+                <section id="questao4" class="col-1" style="text-align:left">
+                    <h4>Para manter a flor lírio oriental basta regá-la com frequência e mantê-la num local bem iluminado;
+                        porém, vale lembrar, com sol não muito forte.</h4>
+                    <input type="radio" name="questao4" value="correto" >Verdadeiro<br>
+                    <input type="radio" name="questao4" value="incorreto" >Falso<br>
+                </section>
+                
+                <section id="questao5" class="col-1" style="text-align:left">
+                    <h4>Lírios asiáticos possuem uma característica marcante: suas pétalas são um pouco maiores do que as outras.</h4>
+                    <input type="radio" name="questao5" value="incorreto" >Verdadeiro<br>
+                    <input type="radio" name="questao5" value="correto" >Falso<br>
+                </section>
+
+                <section id="questao6" class="col-1" style="text-align:left">
+                    <h4>Lírios asiáticos possuem diversas cores, embora as mais procuradas são as mais vivas e fortes.</h4>
+                    <input type="radio" name="questao6" value="correto" >Verdadeiro<br>
+                    <input type="radio" name="questao6" value="incorreto" >Falso<br>
+                </section>
+
+                <section id="questao7" class="col-1" style="text-align:left">
+                    <h4>Lírios longuiflorum possuem folhas de tamanho grande se comparado com os lírios asiáticos por exemplo.</h4>
+                    <input type="radio" name="questao7" value="correto" >Verdadeiro<br>
+                    <input type="radio" name="questao7" value="incorreto" >Falso<br>
+                </section>
+
+                <section id="questao8" class="col-1" style="text-align:left">
+                    <h4>Lírios longuiflorum são muito usados em velórios por sua presença marcante que traz uma energia melancólica para o ambiente.</h4>
+                    <input type="radio" name="questao8" value="incorreto" >Verdadeiro<br>
+                    <input type="radio" name="questao8" value="correto" >Falso<br>
+                </section>
+
+                <section id="questao9" class="col-1" style="text-align:left">
+                    <h4>Lírios do vale não possuem muitos significados espirituais ou emocionais.</h4>
+                    <input type="radio" name="questao9" value="incorreto" >Verdadeiro<br>
+                    <input type="radio" name="questao9" value="correto" >Falso<br>
+                </section>
+
+                <section id="questao10" class="col-1" style="text-align:left">
+                    <h4>O lírio do vale já foi mencionado na bíblia</h4>
+                    <input type="radio" name="questao10" value="correto" >Verdadeiro<br>
+                    <input type="radio" name="questao10" value="incorreto" >Falso<br>
+                </section>
+
+                <section id="questao11" class="col-1" style="text-align:left">
+                    <h4>Os lírios orientais no Brasil é uma das campeãs de venda e plantio</h4>
+                    <input type="radio" name="questao11" value="correto" >Verdadeiro<br>
+                    <input type="radio" name="questao11" value="incorreto" >Falso<br>
+                </section>
+
+                <section id="questao12" class="col-1" style="text-align:left">
+                    <h4>Lírio oriental conta com uma boa florescência, que normalmente ocorre entre os meses de junho e dezembro.</h4>
+                    <input type="radio" name="questao12" value="correto" >Verdadeiro<br>
+                    <input type="radio" name="questao12" value="incorreto" >Falso<br>
+                </section>
+
+                <section id="questao13" class="col-1" style="text-align:left">
+                    <h4>Os lírios longuiflorum contam com uma leveza muito natural, oriunda de suas cores mais vivas</h4>
+                    <input type="radio" name="questao13" value="incorreto" >Verdadeiro<br>
+                    <input type="radio" name="questao13" value="correto" >Falso<br>
+                </section>
+                
+                <section id="questao14" class="col-1" style="text-align:left">
+                    <h4>Os lírios longuiflorum são aplicados principalmente em casamentos, festas, decoração, entre outros. Isso devido à sua presença
+                        marcante e o requinte de sofisticação que agrega a qualquer ambiente
+                    </h4>
+                    <input type="radio" name="questao14" value="correto" >Verdadeiro<br>
+                    <input type="radio" name="questao14" value="incorreto" >Falso<br>
+                </section>
+
+                <section id="questao15" class="col-1" style="text-align:left">
+                    <h4>O lírio tambem é comumente chamado de "lágrimas de Pandora" devido a uma mitologia grega</h4>
+                    <input type="radio" name="questao15" value="incorreto" >Verdadeiro<br>
+                    <input type="radio" name="questao15" value="correto" >Falso<br>
+                </section>
+
+                <section id="questao16" class="col-1" style="text-align:left">
+                    <h4>Existe um bairro com o nome de Lírio do Vale</h4>
+                    <input type="radio" name="questao16" value="correto" >Verdadeiro<br>
+                    <input type="radio" name="questao16" value="incorreto" >Falso<br>
+                </section>
+
+                <section id="questao17" class="col-1" style="text-align:left">
+                    <h4>O lírio também é comumente chamado de "lágrimas de Maria" devido a um conto do cristianismo</h4>
+                    <input type="radio" name="questao17" value="correto" >Verdadeiro<br>
+                    <input type="radio" name="questao17" value="incorreto" >Falso<br>
+                </section>
+
+                <section id="questao18" class="col-1" style="text-align:left">
+                    <h4>O lírio do vale possui um significado intrínseco de melancolia, baseado em um sua estética.</h4>
+                    <input type="radio" name="questao18" value="incorreto" >Verdadeiro<br>
+                    <input type="radio" name="questao18" value="correto" >Falso<br>
+                </section>
+
+                <section id="questao19" class="col-1" style="text-align:left">
+                    <h4>O lírio do vale possui um significado intrínseco de felicidade, baseado em uma lenda muito antiga.</h4>
+                    <input type="radio" name="questao19" value="correto" >Verdadeiro<br>
+                    <input type="radio" name="questao19" value="incorreto" >Falso<br>
+                </section>
+
+                <section id="questao20" class="col-1" style="text-align:left">
+                    <h4>Existe uma loja de roupas que leva o nome de Lírio do Vale.</h4>
+                    <input type="radio" name="questao20" value="incorreto" >Verdadeiro<br>
+                    <input type="radio" name="questao20" value="correto" >Falso<br>
+                </section>
+
+                <br>
+                <br>
+                <input id="submit" type="submit" value="Enviar">
+
+            </form>
+                <br>
+                <p id='resultado'></p>
+                <div id="botao_replay"></div>
+        </article>
+
+        <article class="col-full" id="respostas">
+
+            <h2 class="title"> Confira o gabarito! </h2>
+
+            <div class="flexbox2">
+
+
+                <section id="resposta1" class="col-1" style="text-align:left">
+                    <h4>Os tipos de lírio do vale são: Lírios orientais, asiáticos e longuiforem</h4>
+                    <p>Todas as opções existem.</p>
+                </section>
+
+                <section id="resposta2" class="col-1" style="text-align:left">
+                    <h4>
+                        Lírio do vale é conhecido por sua beleza, delicadeza e bom aroma. Seu filho e seu pet estão 
+                        seguros perto delas.
+                    </h4>
+                    <p> 
+                        A ultima frase é falsa! De fato o lírio do vale é conhecido por sua beleza, delicadeza e bom aroma.
+                        Entretanto, vale lembrar que elas são potencialmente tóxicas para seu pet e seu filho. Deixe a flor
+                        longe deles.
+                    </p>
+                </section>
+
+                <section id="resposta3" class="col-1" style="text-align:left">
+                    <h4>A flor lírio oriental é marcante pelo seu cheiro.</h4>
+                    <p>
+                        Verdadeiro. De fato, o cheiro dessa espécie é muito marcante e encanta qualquer pessoa que sente o seu aroma.
+                    </p>
+                </section>
+
+                <section id="resposta4" class="col-1" style="text-align:left">
+                    <h4>Para manter a flor lírio oriental basta regá-la com frequência e mantê-la num local bem iluminado;
+                        porém, vale lembrar, com sol não muito forte.</h4>
+                    <p>
+                        Verdadeiro.
+                    </p>
+                </section>
+                
+                <section id="resposta5" class="col-1" style="text-align:left">
+                    <h4>Lírios asiáticos possuem uma característica marcante: suas pétalas são um pouco maiores do que as outras.</h4>
+                    <p>Falso. É o contrário, suas pétalas são um pouco menores do que as outras, e não maiores.
+
+                    </p>
+                </section>
+
+                <section id="resposta6" class="col-1" style="text-align:left">
+                    <h4>Lírios asiáticos possuem diversas cores, embora as mais procuradas são as mais vivas e fortes.</h4>
+                    <p>Verdadeiro. Lirios asiáticos são bem diversos quando o assunto é cor, mas aquelas de cores mais vivas
+                        e fortes são as que mais se destacam.
+                    </p>
+                </section>
+
+                <section id="resposta7" class="col-1" style="text-align:left">
+                    <h4>Lírios longuiflorum possuem folhas de tamanho grande se comparado com os lírios asiáticos por exemplo.</h4>
+                    <p>
+                        Verdadeiro.
+                    </p>
+                </section>
+
+                <section id="resposta8" class="col-1" style="text-align:left">
+                    <h4>Lírios longuiflorum são muito usados em velórios por sua presença marcante que traz uma energia melancólica para o ambiente.</h4>
+                    <p>
+                        Falso. Muito pelo contrário, eles são muito usados em casamentos, festas de 15 anos, presentes, decoração, etc. Isso ocorre devido 
+                        à sua presença marcante que traz energia positiva e um ar requintado e sofisticado para o ambiente.
+                    </p>
+                </section>
+
+                <section id="resposta9" class="col-1" style="text-align:left">
+                    <h4>Lírios do vale não possuem muitos significados como espirituais ou emocionais.</h4>
+                    <p>Falso. Lírios do vale possuem significados bíblicos como as lágrimas de maria e essa flor também melhora o humor do ambiente livrando-o
+                        de energias negativas.
+                    </p>
+                </section>
+
+                <section id="resposta10" class="col-1" style="text-align:left">
+                    <h4>O lírio do vale já foi mencionado nas lendas do cristianismo.</h4>
+                    <p>Verdadeiro. Segundo uma lenda contada pelo cristianismo, as lágrimas de Maria transformaram-se 
+                        em flores de lírio do vale na cruz onde Jesus foi morto, enquanto ela chorava aos seus pés pelo acontecido.
+                    </p>
+                </section>
+
+                <section id="resposta11" class="col-1" style="text-align:left">
+                    <h4>Os lírios orientais no Brasil é uma das campeãs de venda e plantio</h4>
+                    <p>Verdadeiro.</p>
+                </section>
+
+                <section id="resposta12" class="col-1" style="text-align:left">
+                    <h4>Lírio oriental conta com uma boa florescência, que normalmente ocorre entre os meses de junho e dezembro.</h4>
+                    <p>Verdadeiro.</p>
+                </section>
+
+                <section id="resposta13" class="col-1" style="text-align:left">
+                    <h4>Os lírios longuiflorum contam com uma leveza muito natural, oriunda de suas cores mais vivas</h4>
+                    <p>Falso. Eles contam com uma leveza muito natural, oriunda de suas cores mais neutras.</p>
+                </section>
+
+                <section id="resposta14" class="col-1" style="text-align:left">
+                    <h4>Os lírios longuiflorum são aplicados principalmente em casamentos, festas, decoração, entre outros. Isso devido à sua presença
+                        marcante e o requinte de sofisticação que agrega a qualquer ambiente
+                    </h4>
+                    <p>Verdadeiro.</p>
+                </section>
+
+                <section id="resposta15" class="col-1" style="text-align:left">
+                    <h4>O lírio tambem é comumente chamado de "lágrimas de Pandora" devido a uma mitologia grega</h4>
+                    <p>Falso. É comumente chamado de lágrimas de Maria devido a um conto do cristianismo</p>
+                </section>
+
+                <section id="resposta16" class="col-1" style="text-align:left">
+                    <h4>Existe um bairro com o nome de Lírio do Vale</h4>
+                    <p>Verdadeiro. Esse bairro fica em Manaus</p>
+                </section>
+
+                <section id="resposta17" class="col-1" style="text-align:left">
+                    <h4>O lírio também é comumente chamado de "lágrimas de Maria" devido a um conto do cristianismo</h4>
+                    <p>Verdadeiro.</p>
+                </section>
+
+                <section id="resposta18" class="col-1" style="text-align:left">
+                    <h4>O lírio do vale possui um significado intrínseco de melancolia, baseado em um sua estética.</h4>
+                    <p>Falso. Não é melancolia e sim felicidade, baseado em uma lenda antiga.  Conta a lenda que a planta um dia se 
+                        apaixonou por um animal, o rouxinol. O lírio gostava de ouvir o pássaro cantar todos os dias, alegrando tudo 
+                        a sua volta, até que um dia ele não mais apareceu. A partir daí o lírio ficou muito triste e deprimido, até 
+                        que em maio (estação que a planta floresce), o rouxinol voltou a cantar para o lírio, e este pôde florescer.
+                    </p>
+                </section>
+
+                <section id="resposta19" class="col-1" style="text-align:left">
+                    <h4>O lírio do vale possui um significado intrínseco de felicidade, baseado em uma lenda muito antiga.</h4>
+                    <p>Verdadeiro.</p>
+                </section>
+
+                <section id="resposta20" class="col-1" style="text-align:left">
+                    <h4>Existe uma loja de roupas que leva o nome de Lírio do Vale.</h4>
+                    <p>Falso. Existe uma loja que leva o nome da flor, mas é uma loja de artigos religiosos.</p>
+                </section>
+
+            </div>
+        </article>
+    </div>
+
+</body>
+</html>
